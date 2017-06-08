@@ -1,0 +1,30 @@
+<layout>
+
+    <data>
+        <variable
+            name="contorller"
+            type="com.xhz.addusers.controlles.UserGroupListFragmentController"/>
+    </data>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xhz.addusers.fragment.UserGroupListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="@{contorller::btnAddGroupClicked}"
+        android:src="@android:drawable/ic_input_add"
+       />
+</FrameLayout>
+</layout>
